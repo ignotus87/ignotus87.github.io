@@ -1,7 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
-<h1>ignotus87</h1>
-<p>portfolio</p>
+
+	<div id="app">
+		<main-header v-bind:title="fullName"></main-header>
+		<nickname v-bind:nickname="nickname"></nickname>
+		<main-tags v-bind:tags="mainTags"></main-tags>
+		<projects-list></projects-list>
+
+		<div v-for="project in projects">
+			<h2 class="article-header"><a href="#" v-bind:href="project.link" target="_blank">{{project.title}}</a></h2>
+			<div class="project-tags">
+				<i class="project-tag" v-for="tag in project.tags">{{tag}}</i>
+			</div>
+			<div>{{project.description}}</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
 </body>
+
 </html>
