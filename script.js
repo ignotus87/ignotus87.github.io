@@ -31,6 +31,18 @@ var app = new Vue({
                 link: 'https://github.com/ignotus87/RFIDReader',
                 tags: ['xamarin android'],
                 description: 'A Xamarin app to collect MIFARE smart card IDs or in fact any other RFID.'
+            },
+			{
+                title: 'WPF Please Wait - Example application',
+                link: 'https://github.com/ignotus87/WpfPleaseWaitExample',
+                tags: ['.net', 'wpf', 'c#'],
+                description: 'A sample app demonstrating the use of the BusyIndicator of Xceed Wpf Toolkit in an application.'
+            },
+			{
+                title: 'WPF Printable User Control Template Demo',
+                link: 'https://github.com/ignotus87/WpfPrintUserControl',
+                tags: ['.net', 'wpf', 'c#'],
+                description: 'A sample app showing you how to create a printable, A4-sized template of 2x6 labels containing some pieces of text.'
             }
         ]
     }
