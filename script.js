@@ -20,6 +20,12 @@ var app = new Vue({
         nickname: 'ignotus87',
         mainTags: ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'],
         projects: [
+			{
+                title: 'BarcodeGenerator',
+                link: 'https://github.com/ignotus87/BarcodeGenerator',
+                tags: ['.net', 'wpf', 'c#'],
+                description: 'A barcode generator implemented in WPF, utilizing ZXing'
+            },
             {
                 title: 'Laugh!',
                 link: 'https://github.com/ignotus87/LaughApp',
