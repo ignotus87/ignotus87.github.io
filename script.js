@@ -13,12 +13,18 @@ Vue.component('main-tags', {
     template: '<p class="main-tags"><span class="main-tag" v-for="tag in tags">{{ tag }}</span></p>'
 });
 
-var app = new Vue({
-    el: '#app',
+var homeSection = new Vue({
+    el: '#home',
     data: {
         fullName: 'Zsolt Takacs',
         nickname: 'ignotus87',
-        mainTags: ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'],
+        mainTags: ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.']
+	}
+});
+
+var projects = new Vue({
+    el: '#projects',
+    data: {
         projects: [
 			{
                 title: 'BarcodeGenerator',

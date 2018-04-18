@@ -1,35 +1,69 @@
-<!doctype html>
-<html>
+﻿<!doctype html>
+<html lang="en">
 
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="style.css" />
 	
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 	
     <title>Zsolt Takacs</title>
 </head>
 
 <body>
+	<nav></nav>
 
-	<div id="app">
-		<main-header v-bind:title="fullName"></main-header>
-		<nickname v-bind:nickname="nickname"></nickname>
-		<main-tags v-bind:tags="mainTags"></main-tags>
-		<projects-list></projects-list>
-
+	<section class="container-fluid home" id="home">
+		<div class="wrapper">
+			<div><img class='img-responsive' id='me_image' src='images/me_image.jpg'></div>
+			<main-header v-bind:title="fullName"></main-header>
+			<nickname v-bind:nickname="nickname"></nickname>
+			<main-tags v-bind:tags="mainTags"></main-tags>
+			<div class="social-contacts">
+				<a href="https://www.linkedin.com/in/zsolt-takacs-207971161/"><img src="images/linkedin.svg" alt="Linkedin"></a>
+				<a href="https://github.com/ignotus87"><img src="images/github.svg" alt="GitHub"></a>
+				<a href="https://stackoverflow.com/users/2502511/ignotus"><img src="images/stackoverflow.svg" alt="StackOverflow"></a>
+				<a href="https://www.codewars.com/users/ignotus87"><img src="images/codewars.svg" alt="CodeWars"></a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="container-fluid about">
+	    <h2>About Me</h2>
+		<div id="small_bio">
+		<p>A full-stack developer who loves being one of the makers of today's tech-driven world.</p>
+		<p>I like providing solutions to everyday problems, make others' work easier. Interested ing exploring the potential in big data and connected things.</p>
+	</section>
+		
+	<section class="container-fluid projects" id="projects">
+		<h2>Projects</h2>
 		<div v-for="project in projects">
-			<h2 class="article-header"><a href="#" v-bind:href="project.link" target="_blank">{{project.title}}</a></h2>
+			<h3 class="article-header"><a href="#" v-bind:href="project.link" target="_blank">{{project.title}}</a></h3>
 			<div class="project-tags">
 				<i class="project-tag" v-for="tag in project.tags">{{tag}}</i>
 			</div>
 			<div>{{project.description}}</div>
 		</div>
-	</div>
+	</section>
+	
+	<section class='contact'>
+	  <div class='container-fluid contact_container'></div>
+	</section>
+
+    <footer class="credits">
+        <i>Thanks for the inspiration and code snippets to <a href="https://github.com/jasil1414/portfolio">Jasil at GitHub</a> </i>
+    </footer>
 
 	<script src="script.js"></script>
-
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
