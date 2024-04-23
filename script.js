@@ -40,7 +40,14 @@ const app = createApp({
                    tags: ['.net', 'wpf', 'c#'],
                    description: 'a sample app showing you how to create a printable, a4-sized template of 2x6 labels containing some pieces of text.',
                    thumbnail: 'images/printable.jpg'
-               }
+               },
+			   {
+				   title: 'mushroom lookup',
+				   link: 'https://ignotus87.github.io/mige-lookup/',
+				   tags: ['js', 'html'],
+				   description: 'lookup app for searching in the indexed repository of MIGE - Miskolci Gombász Egyesület',
+				   thumbnail: 'images/mige.png'
+			   }
            ]);
 	
     return {
