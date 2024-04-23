@@ -7,6 +7,27 @@ const app = createApp({
 	const mainTags = ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'];
 	const projects = ref([
 			   {
+				   title: 'mushroom lookup',
+				   link: 'https://ignotus87.github.io/mige-lookup/',
+				   tags: ['js', 'html'],
+				   description: 'lookup app for searching in the indexed repository of MIGE - Miskolci Gombász Egyesület',
+				   thumbnail: 'images/mige.png'
+			   },
+			   {
+				   title: 'albertirsa.info',
+				   link: 'https://ignotus87.github.io/albertirsa/',
+				   tags: ['js', 'html'],
+				   description: 'info repo page for the city of Albertirsa',
+				   thumbnail: 'images/albertirsa.png'
+			   },
+			   {
+				   title: 'hungarian fish quiz',
+				   link: 'https://ignotus87.github.io/hu-fish-quiz/',
+				   tags: ['js', 'html'],
+				   description: 'learning material for the Hungarian fisher certificate',
+				   thumbnail: 'images/fish.jpg'
+			   },
+			   {
                    title: 'barcodegenerator',
                    link: 'https:github.com/ignotus87/barcodegenerator',
                    tags: ['.net', 'wpf', 'c#'],
@@ -40,14 +61,7 @@ const app = createApp({
                    tags: ['.net', 'wpf', 'c#'],
                    description: 'a sample app showing you how to create a printable, a4-sized template of 2x6 labels containing some pieces of text.',
                    thumbnail: 'images/printable.jpg'
-               },
-			   {
-				   title: 'mushroom lookup',
-				   link: 'https://ignotus87.github.io/mige-lookup/',
-				   tags: ['js', 'html'],
-				   description: 'lookup app for searching in the indexed repository of MIGE - Miskolci Gombász Egyesület',
-				   thumbnail: 'images/mige.png'
-			   }
+               }			   
            ]);
 	
     return {
