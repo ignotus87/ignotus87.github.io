@@ -6,6 +6,13 @@ const app = createApp({
 	const nickname = 'ignotus87';
 	const mainTags = ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'];
 	const projects = ref([
+               {
+				   title: 'Quiz about the stream Gerje',
+				   link: 'https://github.com/ignotus87/gerje-kviz',
+				   tags: ['js', 'html'],
+				   description: 'a Hungarian quiz on the stream Gerje flowing through Albertirsa',
+				   thumbnail: 'images/gerje-kviz.png'
+			   },
 			   {
 				   title: 'mushroom lookup',
 				   link: 'https://ignotus87.github.io/mige-lookup/',
