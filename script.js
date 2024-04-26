@@ -7,7 +7,7 @@ const app = createApp({
 	const mainTags = ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'];
 	const projects = ref([
                {
-				   title: 'Quiz about the stream Gerje',
+				   title: 'Quiz about the Gerje',
 				   link: 'https://github.com/ignotus87/gerje-kviz',
 				   tags: ['js', 'html'],
 				   description: 'a Hungarian quiz on the stream Gerje flowing through Albertirsa',
@@ -15,7 +15,7 @@ const app = createApp({
 			   },
 			   {
 				   title: 'mushroom lookup',
-				   link: 'https://ignotus87.github.io/mige-lookup/',
+				   link: 'https://github.com/ignotus87/mige-lookup',
 				   tags: ['js', 'html'],
 				   description: 'lookup app for searching in the indexed repository of MIGE - Miskolci Gombász Egyesület',
 				   thumbnail: 'images/mige.png'
