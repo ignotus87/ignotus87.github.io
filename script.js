@@ -80,32 +80,3 @@ const app = createApp({
   }
 });
 app.mount("#main-container");
-
-
-// var homeSection = new Vue({
-    // el: '#home',
-    // data: {
-        // 
-	// }
-// });
-
-// app.component('main-header', {
-    // props: ['title'],
-    // template: '<h1 class="main-header">{{ title }}</h1>'
-// });
-
-// app.component('nickname', {
-    // props: ['nickname'],
-    // template: '<div class="name-div">{{ nickname }}</div>'
-// });
-
-// app.component('main-tags', {
-    // props: ['tags'],
-    // template: '<p class="main-tags"><span class="main-tag" v-for="tag in tags">{{ tag }}</span></p>'
-// });
-
-// var projects = new Vue({
-    // el: '#projects',
-    // data: {
-  
-// });
