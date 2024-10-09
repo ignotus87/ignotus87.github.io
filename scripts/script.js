@@ -7,6 +7,13 @@ const app = createApp({
         const mainTags = ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'];
         const projects = ref([
             {
+                title: 'Mushroom quiz',
+                link: 'https://github.com/ignotus87/mushroom-quiz',
+                tags: ['js', 'html', 'map'],
+                description: 'A quiz of the mushroom species of Hungary',
+                thumbnail: 'images/mige.jpg'
+            },
+            {
                 title: 'Fairy gardens on map',
                 link: 'https://github.com/ignotus87/tunderkertek',
                 tags: ['js', 'html', 'map'],
