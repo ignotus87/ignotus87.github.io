@@ -7,6 +7,13 @@ const app = createApp({
         const mainTags = ['.net', 'wpf', 'full-stack', 'sql-server', 'php', 'javascript', 'etc.'];
         const projects = ref([
             {
+                title: 'Fairy gardens on map',
+                link: 'https://github.com/ignotus87/tunderkertek',
+                tags: ['js', 'html', 'map'],
+                description: 'Show all fairy gardens (native fruit tree gardens) of the Carpatian basin on a map',
+                thumbnail: 'images/tunderkert.jpg'
+            },
+            {
                 title: 'Mushroom inspector registry',
                 link: 'https://github.com/ignotus87/mushroom-inspector-registry',
                 tags: ['Alteryx'],
