@@ -11,7 +11,7 @@ const app = createApp({
                 link: 'https://github.com/ignotus87/mushroom-quiz',
                 tags: ['js', 'html', 'map'],
                 description: 'A quiz of the mushroom species of Hungary',
-                thumbnail: 'images/mige.jpg'
+                thumbnail: 'images/mige.png'
             },
             {
                 title: 'Fairy gardens on map',
