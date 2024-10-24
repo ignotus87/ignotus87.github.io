@@ -60,6 +60,7 @@
 									<i class="project-tag" v-for="tag in project.tags">{{tag}}</i>
 								</div>
 								<p class="card-text">{{project.description}}</p>
+								<div><a v-bind:href="project.codeLink" target="_blank">[show code]</a></div>
 							</div>
 						</div>
 					</div>
